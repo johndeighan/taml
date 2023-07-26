@@ -1,0 +1,25 @@
+{
+	"name": "@jdeighan/taml",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "tabbed yaml format",
+	"main": "index.js",
+	"engines": {
+		"node": ">=18.0.0"
+		},
+	"exports": {
+		".": "./src/lib/taml.js",
+		"./package.json": "./package.json"
+		},
+	"scripts": {
+		"build": "cls && coffee -c .",
+		"test": "npm run build && ava ./test/*.test.js && git status"
+		},
+	"keywords": ["coffeescript"],
+	"author": "John Deighan",
+	"license": "MIT",
+	"devDependencies": {
+		"@jdeighan/base-utils": "^8.0.7",
+		"@jdeighan/unit-tester": "^3.0.61"
+		}
+	}
